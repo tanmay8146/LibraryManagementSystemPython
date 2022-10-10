@@ -90,7 +90,7 @@ class Login():
         userVerify1 = userVerify.get()
         passwordVerify1 = passwordVerify.get()
 
-        q_verification = "select * from dbcli_login where login_id = %s and password = %s"
+        q_verification = "select * from dbcli_login where username = %s and password = %s"
         cursordb.execute(q_verification, [(userVerify1), (passwordVerify1)])
         result = cursordb.fetchall()
         if result:
