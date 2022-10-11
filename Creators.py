@@ -36,7 +36,6 @@ class Window:
 
         print("That's who we are! Return to main window?")
 
-        #credWin.mainloop()
 
 if __name__ == "__main__":
     Window.creditsOnClick();

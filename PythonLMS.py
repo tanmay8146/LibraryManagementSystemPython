@@ -5,7 +5,7 @@ import mysql.connector;
 from tkinter import messagebox;
 import Exit;
 import Creators;
-import terminalOnDemand as dbTerminal
+import terminalOnDemand as dbTerminal;
 
 class LibSys:
                     # Author @TanmayXD
