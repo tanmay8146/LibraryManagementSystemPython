@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 09, 2022 at 01:09 PM
+-- Generation Time: Oct 12, 2022 at 09:34 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -65,6 +65,7 @@ CREATE TABLE `bookshelf` (
 --
 
 INSERT INTO `bookshelf` (`bookid`, `bookname`, `authorname`, `edition`) VALUES
+('', '', '', ''),
 ('B000', 'DBMS Concepts', 'S Sudarshan', '7th'),
 ('B001', 'Learn Python the Hard Way', 'Zed Shaw', '5th'),
 ('B002', 'Introduction to Machine Learning with Python', 'Andreas Muller', '8th'),
@@ -85,7 +86,7 @@ INSERT INTO `bookshelf` (`bookid`, `bookname`, `authorname`, `edition`) VALUES
 CREATE TABLE `dbcli_login` (
   `id` varchar(11) DEFAULT NULL,
   `f_name` varchar(32) NOT NULL,
-  `login_id` varchar(16) NOT NULL,
+  `username` varchar(16) NOT NULL,
   `password` varchar(16) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -93,7 +94,7 @@ CREATE TABLE `dbcli_login` (
 -- Dumping data for table `dbcli_login`
 --
 
-INSERT INTO `dbcli_login` (`id`, `f_name`, `login_id`, `password`) VALUES
+INSERT INTO `dbcli_login` (`id`, `f_name`, `username`, `password`) VALUES
 ('02', 'Anuj Ghosh', 'anujghosh', '5252'),
 ('03', 'Meghdeep Dutta', 'meghdeepdutta', '7171'),
 ('01', 'Priya Mrug', 'priyamrug', '8181'),
@@ -164,9 +165,9 @@ INSERT INTO `lib` (`member`, `prn_id`, `id`, `f_name`, `l_name`, `address_one`, 
 ('Admin', 202201, '1', 'Priya', 'Mrug', 'Coochbehar', 'West Bengal', '736101', '7047918278', 'B008', 'Machine Learning for Dummies', 'John Paul Mueller', '2022-10-08 16:33:11.191986', '2022-10-23 16:33:11.191986', '15', 'Rs. 90', 'NULL', 'Rs. 1900'),
 ('Admin', 202202, '02', 'Anuj', 'Ghosh', 'Siliguri', 'West Bengal', '734011', '7679885140', 'B007', 'Effective Java', 'Joshua Bloch', '2022-10-04 01:42:21.746083', '2022-10-19 01:42:21.746083', '15', 'Rs. 40', 'NULL', 'Rs. 1700'),
 ('Admin', 202203, '03', 'Meghdeep', 'Dutta', 'Jalpaiguri', 'West Bengal', '735224', '6295368851', 'B005', 'Data Science For Dummies', 'Lillian Pierson', '2022-10-04 01:43:24.732867', '2022-10-19 01:43:24.732867', '15', 'Rs. 90', 'NULL', 'Rs. 1100'),
-('Student', 202204, '45', 'Niladri', 'Paul', 'Siliguri', 'West Bengal', '734101', '7407959932', 'B006', 'Brief History of Time', 'Stephen Hawking', '2022-10-05 11:56:08.793061', '2022-10-20 11:56:08.793061', '15', 'Rs. 150', 'NULL', 'Rs. 2100'),
+('Student', 202204, '45', 'Niladri', 'Paul', 'Siliguri', 'West Bengal', '734101', '7407959946', 'B006', 'Brief History of Time', 'Stephen Hawking', '2022-10-05 11:56:08.793061', '2022-10-20 11:56:08.793061', '15', 'Rs. 150', 'NULL', 'Rs. 2100'),
 ('Student', 202205, '7', 'Deep', 'Sengupta', 'Siliguri', 'West Bengal', '734101', '6295000007', 'B003', 'Head First C', 'Dawn Griffiths', '2022-10-05 14:37:34.043690', '2022-10-20 14:37:34.043690', '15', 'Rs. 29', 'NULL', 'Rs. 1600'),
-('Lecturer', 202206, '1', 'Debarati', 'Maitra', 'Siliguri', 'West Bengal', '734011', '9832072707', 'B003', 'Head First C', 'Dawn Griffiths', '2022-10-06 09:39:29.716322', '2022-10-21 09:39:29.716322', '15', 'Rs. 29', 'NULL', 'Rs. 1600');
+('Student', 202207, '16', 'Aneek', 'Ghosh', 'Bagdogra', 'West Bengal', '734016', '6969696969', 'B009', 'Machine Learning for Dummies', 'John Paul Mueller', '2022-10-10 10:16:05.006576', '2022-10-25 10:16:05.006576', '15', 'Rs. 90', 'NULL', 'Rs. 1900');
 
 -- --------------------------------------------------------
 
@@ -322,7 +323,7 @@ ALTER TABLE `bookshelf`
 -- Indexes for table `dbcli_login`
 --
 ALTER TABLE `dbcli_login`
-  ADD PRIMARY KEY (`login_id`),
+  ADD PRIMARY KEY (`username`),
   ADD KEY `id` (`id`);
 
 --

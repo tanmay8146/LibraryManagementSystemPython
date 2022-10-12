@@ -1,5 +1,3 @@
-#Coming SOON!!!
-
 import os
 import win32gui, win32con
 class terminal:
