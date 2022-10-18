@@ -6,6 +6,7 @@ Library Management System
                                 The System help both students and library manager to keep a constant record of all books available in the library.
 
 Project Team Members("Team 64bit-Legions"):
+
         1. Tanmay Sarkar
             Project Team Lead
                 Backend, GUI Designing
@@ -19,6 +20,7 @@ Project Team Members("Team 64bit-Legions"):
                 Backend
 
 Project Log:
+
     02/10/2022  :   Project initiated LibSys v0.1alpha
                     Generated basic infrastructure for GUI
                     Created basic database for minimal functionality.
@@ -53,7 +55,8 @@ Project Log:
                         Functionalized Update feature
                         Major bug fixes.
                         Functionalized Delete feature
-===================>Released LibSys v1.0beta for beta testing on 06/10/2022
+Released LibSys v1.0beta for beta testing on 06/10/2022
+
                         Migrated to Database Viewer CLI v1.0beta
     07/10/2022  :   Minor bugs fixed
     08/10/2022  :   Migrated to Database Viewer CLI v1.1beta
