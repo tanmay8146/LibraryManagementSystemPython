@@ -1,4 +1,5 @@
-Project Name: Library Management System
+Library Management System
+
         Project Programming Language: Python 3.10
         Project Started: 01/10/2022
         Project Description:    The Library Management System manages and stores books information and transactions electronically according to students needs.
