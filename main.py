@@ -4,13 +4,13 @@ import mysql.connector as msql;
 import PythonLMS as Lms;
 from time import sleep;
 import os;
-import terminalOnDemand
+import terminalOnDemand;
 
 class Login():
             # Author @TanmayXD
     global conn 
     conn = msql.connect(host="localhost", user="tanmayxd", password="1818", database="libsysdb")
-    global cursordb 
+    global cursordb
     cursordb= conn.cursor()
 
     global mainVersionInfo
@@ -76,7 +76,6 @@ class Login():
         r.mainloop()
         
         
-
     def failed():
         global failedMessage
         failedMessage = Toplevel(root2)

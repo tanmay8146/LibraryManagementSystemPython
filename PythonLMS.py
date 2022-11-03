@@ -43,7 +43,7 @@ class LibSys:
         lbltitle = Label(self.root, text="LIBRARY MANAGEMENT SYSTEM", bg="powder blue", fg="green", bd=20, relief=RIDGE, font=("times new roman", 50, "bold"), padx=2, pady=6);
         lbltitle.pack(side=TOP, fill=X);
 
-        frame = Frame(root, bd=12,relief=RIDGE, padx=20,bg="powder blue");
+        frame = Frame(root, bd=12,relief=RIDGE, padx=20,bg="powder blue")
         frame.place(x=0, y=130, width=1530, height=400)
 
         # Frame// Library Memebership Info 
